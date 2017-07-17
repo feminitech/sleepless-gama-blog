@@ -1,4 +1,8 @@
 class Blog < ApplicationRecord
+	validates :title, presence: true
+	validates :details, presence: true
+	validates :content, presence: true
+	validates :por, presence: true
 	has_attached_file :image#, :path => ":rails_root/public/:id/:filename"
 	validates :image, attachment_presence: true
 	validates_attachment :image, presence: true,
