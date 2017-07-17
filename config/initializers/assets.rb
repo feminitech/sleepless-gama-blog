@@ -12,3 +12,9 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+
+
+# Paperclip
+Paperclip::Attachment.default_options[:url] = ':s3_domain_url'
+Paperclip::Attachment.default_options[:path] = '/:filename'
+# Paperclip::Attachment.default_options[:s3_host_name] = 's3-us-west-2.amazonaws.com'

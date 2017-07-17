@@ -31,6 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk', '~> 2.3.0'
 
 gem 'jquery-rails'
 
