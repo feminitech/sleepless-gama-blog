@@ -53,6 +53,18 @@ class HomeController < ApplicationController
     tyrion   += 1 if p4 == 'tyrion'
     khaleesi += 1 if p4 == 'khaleesi'
 
+    p5 = params[:got][:p5]
+    ban      += 1 if p5 == 'ban'
+    jhon     += 1 if p5 == 'jhon'
+    tyrion   += 1 if p5 == 'tyrion'
+    khaleesi += 1 if p5 == 'khaleesi'
+
+    p6 = params[:got][:p6]
+    ban      += 1 if p6 == 'ban'
+    jhon     += 1 if p6 == 'jhon'
+    tyrion   += 1 if p6 == 'tyrion'
+    khaleesi += 1 if p6 == 'khaleesi'
+
     @result = 'ban' if ban >= jhon && ban >= tyrion && ban >= khaleesi
     @result = 'jhon' if jhon >= ban && jhon >= tyrion && jhon >= khaleesi
     @result = 'tyrion' if tyrion >= ban && tyrion >= jhon && tyrion >= khaleesi
