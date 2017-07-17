@@ -1,0 +1,60 @@
+<!-- <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @blog.details %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @blog.content %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <img src="<%= image_path @blog.image.url %>">
+  
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %> -->
+
+
+
+<div class="main-content">
+    <div class="container">
+        <div class="row" style="position: relative;">
+            <div class="col-md-8">
+                <article class="post">
+                    <div class="post-thumb">
+                        <img src="<%= image_path @blog.image.url %>" alt="">
+                    </div>
+
+                    <div class="post-content">
+                        <header class="entry-header text-center text-uppercase">
+                            <h1 class="entry-title"><%= @blog.title %></h1>
+                        </header>
+
+                        <div class="texto">
+                            <%= @blog.content.html_safe %>
+                        </div>
+
+                        <div class="social-share">
+                            <span class="social-share-title pull-left text-capitalize"><%= @blog.por %></span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+</div>
+

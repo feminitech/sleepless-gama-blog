@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="/css/font-awesome.css" rel="stylesheet" type="text/css">
 
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,7 +29,11 @@
   </head>
 
   <body data-spy="scroll" data-target="#navbar_main" data-offset="80">
+    <%= render 'layouts/navbar' %>
+    
     <%= yield %>
-
+    <%= yield :javascript %>
+    
+    <%= render 'layouts/footer' %>
   </body>
 </html>

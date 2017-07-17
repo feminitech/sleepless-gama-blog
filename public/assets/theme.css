@@ -1110,20 +1110,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-.img-logo,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  float: left;
-  padding: 27.5px 15px;
-  font-size: 20px;
-  line-height: 50px;
-  height: 120px;
-}
+
 .img-rounded {
   border-radius: 0;
 }
@@ -6860,8 +6847,8 @@ form .help-block {
   font-size: 14px;
 }
 .navbar {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border: 0;
   -webkit-transition: padding-top 0.25s, padding-bottom 0.25s, background-color 0.25s;
   transition: padding-top 0.25s, padding-bottom 0.25s, background-color 0.25s;

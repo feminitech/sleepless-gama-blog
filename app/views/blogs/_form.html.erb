@@ -1,0 +1,54 @@
+<!-- <div class="row"> -->
+  <div class="col-lg-12">
+    
+    <%= form_with(model: blog, local: true) do |form| %>
+      <% if blog.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
+
+          <ul>
+          <% blog.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= form.label :title, 'Título' %>
+        <%= form.text_field :title, id: :blog_title, class: 'form-control' %>
+      </div>
+
+      
+      <div class="field">
+        <%= form.label :image, 'Imagem de capa' %>
+        <%= form.file_field :image, id: :blog_image %>
+      </div>
+
+      <div class="field">
+        <%= form.label :por, 'Feito por e Data. Ex: "Por Fulano Em 16 De Julho, 2017"' %>
+        <%= form.text_field :por, id: :blog_por, class: 'form-control' %>
+      </div>
+
+      <div class="field">
+        <%= form.label :details, 'Detalhes do blog' %>
+        <%= form.text_area :details, id: :blog_details, class: 'summernote' %>
+      </div>
+
+      <div class="field" style="display: inline-block;">
+        <%= form.label :content, 'Conteúdo' %>
+        <%= form.text_area :content, id: :blog_content, class: 'summernote' %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit class: 'btn btn-white' %>
+      </div>
+    <% end %>
+  </div>
+<!-- </div> -->
+
+<% content_for :javascript do %>
+<script type="text/javascript">
+  $('.summernote').summernote();
+</script>
+<% end %>
