@@ -1,0 +1,235 @@
+<div class="main-content">
+    <div class="container">
+        <div class="row" style="position: relative;">
+            <div class="col-md-8">
+                <article class="post">
+                    <div class="post-content">
+                        <header class="entry-header text-center text-uppercase">
+                            <h1 class="entry-title">Descubra que tipo de programador você é no mundo de Game of Thrones!</h1>
+                        </header>
+                        
+                        <div class="post-thumb">
+                              <img src="/assets/got programador.png" alt="">
+                        </div>
+                        
+                        <br/>
+    
+                        <div class="texto">
+                            <p class="centro">Responda ao <span>quiz</span> e descubra que tipo de programador vocẽ é no mundo de Game of Thrones!</p>
+                        </div>
+                        
+
+                            <!-- Form -->
+                        <%= form_for :got, url: '/home/programadorgotresult', html: {class: 'contact__container__form'} do |f| %>
+
+                            <div>
+                                <p>Você se acha: </p>
+                                <input type="radio" name="got[p1]" value="ban" checked>Um pouco tímido<br>
+                                <input type="radio" name="got[p1]" value="jhon" checked>Um guerreiro<br>
+                                <input type="radio" name="got[p1]" value="tyrion" checked>Um estrategista<br>
+                                <input type="radio" name="got[p1]" value="khaleesi" checked>Um profissional foda pra c*<br>
+                                <br/>
+                                <p>Para você, programar é: </p>
+                                <input type="radio" name="got[p2]" value="ban" checked>Um momento que entro em transe<br>
+                                <input type="radio" name="got[p2]" value="jhon" checked>Uma descoberta e sobrevivência em um mundo de códigos<br>
+                                <input type="radio" name="got[p2]" value="tyrion" checked>Uma forma de conseguir e criar o que eu quero<br>
+                                <input type="radio" name="got[p2]" value="khaleesi" checked>Uma forma de ser reconhecido<br>
+                                <br/>
+                                <p>Em relação a novas linguagens:: </p>
+                                <input type="radio" name="got[p3]" value="ban" checked>Gosto de aprender antes de todo mundo no meu canto<br>
+                                <input type="radio" name="got[p3]" value="jhon" checked>Aprendo enquanto o projeto está acontecendo<br>
+                                <input type="radio" name="got[p3]" value="tyrion" checked>Se precisar aprendo.... mas só se precisar mesmo<br>
+                                <input type="radio" name="got[p3]" value="khaleesi" checked>Aprendo as mais usadas e que me dão mais destaque<br>
+                                <br/>
+                                <p>Trabalho em grupo em um projeto é:: </p>
+                                <input type="radio" name="got[p4]" value="ban" checked>Complicado, pois gosto de trabalhar sozinho<br>
+                                <input type="radio" name="got[p4]" value="jhon" checked>Faz parte da luta<br>
+                                <input type="radio" name="got[p4]" value="tyrion" checked>Consigo me sair bem<br>
+                                <input type="radio" name="got[p4]" value="khaleesi" checked>Uma oportunidade para destacar<br>
+                                <br/>
+                                <p>Se o projeto muda e é preciso recomeçar do zero, você: </p>
+                                <input type="radio" name="got[p5]" value="ban" checked>Aceita e já começa a planejar o que vai ser preciso para a nova programação <br>
+                                <input type="radio" name="got[p5]" value="jhon" checked>Tenta ressuscitar alguma programação ou código que possa ser reaproveitado<br>
+                                <input type="radio" name="got[p5]" value="tyrion" checked>Espera a reação de todos para ir com a decisão da maioria<br>
+                                <input type="radio" name="got[p5]" value="khaleesi" checked>Já cria uma nova solução e tenta convencer a todos que esse é o caminho<br>
+                                <br/>
+                                <p>Por fim, se o estoque de café acaba e o trabalho ainda estiver longe de ser finalizado você: </p>
+                                <input type="radio" name="got[p5]" value="ban" checked>Trava um pouco<br>
+                                <input type="radio" name="got[p5]" value="jhon" checked>Morre e só ressuscita depois que ele volta<br>
+                                <input type="radio" name="got[p5]" value="tyrion" checked>Consegue programar sem ele <br>
+                                <input type="radio" name="got[p5]" value="khaleesi" checked>Arruma rapidamente um novo estoque de café que vai dominar a empresa<br>
+                            </div>
+                            
+                            <br/>
+                            
+                            <div>
+                                <p>Apenas nos diga quem é você para ver seu resultado!</p>
+                            </div>
+            
+                            <!-- Name -->
+                            <div class="form-group">
+                              <label for="name" class="sr-only">Name *</label>
+                              <input name="got[name]" class="form-control" id="name" placeholder="Qual seu Nome?" type="text">
+                              <span class="help-block"></span>
+                            </div>
+    
+                            <!-- Email -->
+                            <div class="form-grou-nl">
+                              <label for="email" class="sr-only">Email address *</label>
+                              <input name="got[email]" class="form-control" id="email" placeholder="Qual seu Email?" type="email">
+                              <span class="help-block"></span>
+                            </div>
+    
+                            <!-- Submit -->
+                            <button type="submit" class="btn btn-primary" >
+                              Mostrar meu Resultado!
+                            </button>
+                        <% end %>
+                            
+                            
+                        
+                        <div class="social-share">
+                            <span class="social-share-title pull-left text-capitalize">Por Nayara em 16 de julho, 2017</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4" data-sticky_column="">
+                <div class="primary-sidebar">
+                    <aside class="widget about-me-widget">
+                        <div class="about-me-img">
+
+                            <div class="about-me-content text-center">
+                                <img src="/assets/logoPerfil.png" alt="" class="img-me">
+
+                                <h3 class="text-uppercase">Transforme a Carreira</h3>
+
+                                <p>TEXTINHO SOBRE NÓS</p>
+                            </div>
+                        </div>
+                        <div class="social-share">
+                            <ul class="text-center text-center">
+                                <li><a class="s-facebook" href=""><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="s-instagram" href=""><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </aside>
+                    <aside class="widget news-letter">
+                        <h3 class="widget-title text-uppercase text-center">Assine Nossa Newsletter Gratuita</h3>
+
+                        <%= form_for :contact_us, url: '/contact', html: {class: 'contact__container__form'} do |f| %>
+                            <%= f.text_field :name, class: 'form-control', placeholder: "Qual seu nome?" %>
+                            <br/>
+                            <%= f.email_field :email, class: 'form-control', placeholder: "Qual seu email?" %>
+                            <input value="Assine Agora" class="text-uppercase text-center btn btn-subscribe" type="submit">
+                        <% end %>
+
+                    </aside>
+                    <aside class="widget">
+                        <h3 class="widget-title text-uppercase text-center">Posts em Destaque</h3>
+                        <div class="popular-post">
+
+
+                            <a href="Post Ebook.html" class="popular-img"><img src="/assets/capa-e-book.jpg" alt="">
+
+                                <div class="p-overlay"></div>
+                            </a>
+
+                            <div class="p-content">
+                                <a href="Post Ebook.html" class="text-uppercase">E-book Guia</a>
+                                <span class="p-date">17 de Julho, 2017</span>
+
+                            </div>
+                        </div>
+                        <div class="popular-post">
+
+
+                            <a href="Quiz Mercado.html" class="popular-img"><img src="/assets/Quiz Mercado.png" alt="">
+
+                                <div class="p-overlay"></div>
+                            </a>
+
+                            <div class="p-content">
+                                <a href="Quiz Mercado.html" class="text-uppercase">Quiz Mercado</a>
+                                <span class="p-date">18 de Julho, 2017</span>
+
+                            </div>
+                        </div>
+                        
+                        <div class="popular-post">
+
+
+                            <a href="Tipo Programador.html" class="popular-img"><img src="/assets/got programador.png" alt="">
+
+                                <div class="p-overlay"></div>
+                            </a>
+
+                            <div class="p-content">
+                                <a href="Tipo Programador.html" class="text-uppercase">Quiz Programador | GOT</a>
+                                <span class="p-date">18 de Julho, 2017</span>
+
+                            </div>
+                        </div>
+                    </aside>
+
+                </div>
+            </div><div id="" class="col-md-4 jquery-stickit-spacer" style="display: none; visibility: hidden;"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_portfolio" tabindex="-1" role="dialog" aria-labelledby="modal_portfolio__heading">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title" id="modal_portfolio__heading"></h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="contact__container">
+                  <div class="row">
+                    <div class="col-sm-8">
+
+                      <!-- Form -->
+                      <form class="contact__container__form" id="form_sendemail">
+
+                        <!-- Name -->
+                        <div class="form-group">
+                          <label for="name" class="sr-only">Name *</label>
+                          <input name="name" class="form-control" id="name" placeholder="Insira seu Nome" type="text">
+                          <span class="help-block"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-grou-nl">
+                          <label for="email" class="sr-only">Email address *</label>
+                          <input name="email" class="form-control" id="email" placeholder="Insira seu Email" type="email">
+                          <span class="help-block"></span>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="btn btn-primary">
+                          Baixe seu Ebook!
+                        </button>
+
+                      </form>
+
+                    </div>
+                  </div> <!-- / .row -->
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>

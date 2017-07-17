@@ -143,14 +143,14 @@ header
 .main-menu .navbar-nav li a:hover,
 .main-menu .navbar-nav li a:active,
 .main-menu .navbar-nav > li a:focus {
-    color: #00BFF3;
+    color: #23E250;
 }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #00BFF3;
+    color: #23E250;
     background-color: transparent;
 }
 .i_con a i:hover {
-    color: #00BFF3;
+    color: #23E250;
 
 }
 
@@ -195,7 +195,7 @@ header
 }
 
 .main-menu ul ul a:hover, .main-menu ul ul ul li a:hover{
-    background: #00BFF3;
+    background: #23E250;
     color: #fff !important;
 }
 
@@ -258,9 +258,9 @@ header
 }
 
 .social-share ul li a i:hover {
-    background: #00BFF3;
+    background: #23E250;
     color: #FFF;
-    border-color: #00BFF3;
+    border-color: #23E250;
 }
 
 .nav > li > a {
@@ -330,16 +330,16 @@ a.more-link {
     text-decoration: none;
     margin: 24px 0 28px;
     display: inline-block;
-    color: #00BFF3;
+    color: #23E250;
     border: 1px solid #eee;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 a.more-link:hover {
-    background: #00BFF3;
+    background: #23E250;
     color: #fff;
-    border-color: #00BFF3;
+    border-color: #23E250;
 }
 
 .post {
@@ -369,7 +369,7 @@ a.more-link:hover {
 }
 
 .social-share span a:hover {
-    color: #00BFF3;
+    color: #23E250;
     text-decoration: none;
 }
 
@@ -466,7 +466,7 @@ pagination
 .pagination > li > span:hover {
     z-index: 2;
     color: #ffffff;
-    background-color: #00BFF3;
+    background-color: #23E250;
 }
 
 .pagination > li:last-child > a,
@@ -483,7 +483,7 @@ pagination
 .pagination > .active > span:hover {
     z-index: 3;
     color: #fff;
-    background-color: #00BFF3;
+    background-color: #23E250;
 }
 
 /*==========
@@ -568,7 +568,7 @@ subscribe newsletter
 }
 
 .btn-subscribe:hover {
-    background-color: #00BFF3;
+    background-color: #23E250;
     color: #fff;
 }
 
@@ -609,7 +609,7 @@ popular post
 }
 
 .p-content a:hover {
-    color: #00BFF3
+    color: #23E250
 }
 
 .p-content span {
@@ -788,7 +788,7 @@ Categories
 }
 
 .widget ul li a:hover {
-    color: #00BFF3
+    color: #23E250
 }
 
 .widget.border ul li {
@@ -1292,7 +1292,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea {
 }
 
 .send-btn:hover {
-    background: #00BFF3;
+    background: #23E250;
     color: #fff;
 }
 
@@ -1467,7 +1467,7 @@ about me
     line-height: 24px;
     color: #fff;
     text-align: left;
-    background-color: #00BFF3;
+    background-color: #23E250;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
     -webkit-transition: width .6s ease;
@@ -1628,16 +1628,16 @@ p.go-back-home a {
     text-decoration: none;
     margin: 24px 0 28px;
     display: inline-block;
-    color: #00BFF3;
+    color: #23E250;
     border: 1px solid #eee;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
 
 p.go-back-home a:hover {
-    background: #00BFF3;
+    background: #23E250;
     color: #fff;
-    border-color: #00BFF3;
+    border-color: #23E250;
 }
 
 .img-logo,
@@ -1653,6 +1653,21 @@ p.go-back-home a:hover {
   font-size: 20px;
   line-height: 50px;
   height: 60px;
+}
+
+.img-footer,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: left;
+  padding: 27.5px 15px;
+  font-size: 20px;
+  line-height: 50px;
+  height: 45px;
 }
 
 .img-texto,
@@ -1688,3 +1703,4 @@ span{
   font-weight: bolder;
   font-size: 16px;
 }
+

@@ -104,12 +104,16 @@
                     <aside class="widget news-letter">
                         <h3 class="widget-title text-uppercase text-center">Assine Nossa Newsletter Gratuita</h3>
 
-                        <form action="#">
-                            <input class="form-control" placeholder="Qual seu nome?" type="text">
-                            <br/>
-                            <input class="form-control" placeholder="Qual seu email?" type="email">
-                            <input value="Assine Agora" class="text-uppercase text-center btn btn-subscribe" type="submit">
-                        </form>
+
+
+
+                        
+                      <%= form_for :contact_us, url: '/contact', html: {class: 'contact__container__form'} do |f| %>
+                        <%= f.text_field :name, class: 'form-control', placeholder: "Qual seu nome?" %>
+                        <br/>
+                        <%= f.email_field :email, class: 'form-control', placeholder: "Qual seu email?" %>
+                        <input value="Assine Agora" class="text-uppercase text-center btn btn-subscribe" type="submit">
+                      <% end %>
 
                     </aside>
                     <!-- <aside class="widget">
@@ -154,20 +158,23 @@
                   <div class="row">
                     <div class="col-sm-8">
 
+
+
+
                       <!-- Form -->
-                      <form class="contact__container__form" id="form_sendemail">
+                      <%= form_for :contact_us, url: '/contact', html: {class: 'contact__container__form'} do |f| %>
 
                         <!-- Name -->
                         <div class="form-group">
                           <label for="name" class="sr-only">Name *</label>
-                          <input name="name" class="form-control" id="name" placeholder="Insira seu Nome" type="text">
+                          <%= f.text_field :name, class: 'form-control', placeholder: "Insira seu Nome" %>
                           <span class="help-block"></span>
                         </div>
 
                         <!-- Email -->
                         <div class="form-grou-nl">
                           <label for="email" class="sr-only">Email address *</label>
-                          <input name="email" class="form-control" id="email" placeholder="Insira seu Email" type="email">
+                          <%= f.email_field :email, class: 'form-control', placeholder: "Insira seu Email" %>
                           <span class="help-block"></span>
                         </div>
 
@@ -176,7 +183,7 @@
                           Baixe seu Ebook!
                         </button>
 
-                      </form>
+                      <% end %>
 
                     </div>
                   </div> <!-- / .row -->

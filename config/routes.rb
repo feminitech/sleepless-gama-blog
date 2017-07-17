@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   resources :blogs
   get 'home/index'
+  get 'home/programadorgot'
+  post 'home/programadorgotresult'
   post 'contact' => 'home#form'
 
   root to: 'home#index'

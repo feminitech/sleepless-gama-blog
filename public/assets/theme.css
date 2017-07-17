@@ -6847,8 +6847,8 @@ form .help-block {
   font-size: 14px;
 }
 .navbar {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border: 0;
   -webkit-transition: padding-top 0.25s, padding-bottom 0.25s, background-color 0.25s;
   transition: padding-top 0.25s, padding-bottom 0.25s, background-color 0.25s;
